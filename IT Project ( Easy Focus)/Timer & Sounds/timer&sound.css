@@ -1,0 +1,174 @@
+body.dark-theme {
+  background-color: #1f2937;
+  color: #A1A1AA;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 550px;
+  padding: 30px 20px;
+  background-color: #2d3b53;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1, h2 {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.timer-box {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 25px;
+  margin: 20px 0;
+  background-color: #212124;
+  border: 3px solid #3b82f6;
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+
+.controls input {
+  padding: 15px;
+  margin: 10px;
+  width: 85px;
+  border-radius: 10px;
+  border: 1px solid #3b82f6;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+button, .link-button {
+  padding: 12px 25px;
+  margin: 10px;
+  background-color: #68bce4;
+  color: #121212;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 5px transparent;
+}
+
+button:hover, .link-button:hover {
+  background-color: #00dddd;
+  box-shadow: 0 0 15px #6ec1e7;
+  transform: scale(1.05);
+}
+
+.sound-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.sound-list button {
+  background-color: #1f1f1f;
+  border: 1px solid #309fdf;
+  color: #A1A1AA;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sound-list button.selected {
+  background-color: #2890d6 !important;
+  color: #FFFFFF !important;
+}
+
+audio {
+  width: 100%;
+  margin: 15px 0;
+  outline: none;
+  border-radius: 12px;
+  background-color: #1f2937;
+  box-shadow: 0 0 10px #42c3e4;
+  padding: 10px;
+}
+
+
+:fullscreen body > *:not(.container) {
+  display: none !important;
+}
+
+:fullscreen .container > *:not(#timer-display) {
+  display: none !important;
+}
+
+:fullscreen .container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 0%;
+  width: 0%;
+  background: #1f2937;
+  padding: 0;
+}
+
+:fullscreen .timer-box {
+  font-size: 20vw;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #0465a5;
+}
+/* ====== Modern Vertical Sidebar ====== */
+.modern-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
+  z-index: 1000;
+}
+
+.modern-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modern-sidebar a {
+  color: #e0e6ed;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modern-sidebar a:hover {
+  background-color: #3b82f6;
+  color: #0f172a;
+  transform: scale(1.05);
+}

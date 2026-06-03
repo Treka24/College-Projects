@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#quoteBox {
+  position: fixed;
+  bottom: 80px; 
+  right: 20px;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  font-family: Arial, sans-serif;
+  z-index: 1000; 
+}
+
+#quoteBox.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#quoteText {
+  margin: 0;
+  font-size: 14px;
+  flex-grow: 1;
+  font-family: Arial, sans-serif;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+#closeBtn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.quote-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3498db;
+}

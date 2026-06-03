@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #212124;
+    color: #A1A1AA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.intro-box {
+    max-width: 750px;
+    padding: 60px 20px;
+    margin: 60px auto 80px auto;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.blue-text {
+    color: #3B82F6;
+}
+
+.main-text {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #A1A1AA;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+hr.separator {
+    border: none;
+    height: 1px;
+    background-color: #444448;
+    width: 80%;
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+h1:not(.main-title) {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+p.subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 40px;
+    color: #A1A1AA;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 0;
+}
+
+.feature-box {
+    background: #2D2D30;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.feature-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.feature-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3B82F6;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #A1A1AA;
+    line-height: 1.5;
+}
+
+.contact-section {
+    background: #2D2D30;
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #A1A1AA;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-button {
+    display: inline-block;
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.email-button:hover {
+    background-color: #2a6edc;
+}

@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e0e6ed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+h1 {
+  color: #3b82f6;
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+
+.controls {
+  margin: 15px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button,
+.controls select {
+  padding: 8px 16px;
+  font-size: 15px;
+  background: #1e293b;
+  color: #e0e6ed;
+  border: 1.5px solid #3b82f6;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls button:hover,
+.controls select:hover {
+  background-color: #3b82f6;
+  color: #0f172a;
+  transform: scale(1.04);
+}
+
+
+#calendar {
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.1);
+  margin-bottom: 30px;
+}
+
+.days-row,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day-name {
+  font-weight: bold;
+  background-color: #1f2937;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #3b82f6;
+  
+}
+
+.day {
+  background-color: #263238;
+  border: 1px solid #3b82f6;
+  padding: 12px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  color: #e0e6ed;
+}
+
+.day:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.04);
+}
+
+.day.empty {
+  background-color: transparent;
+  border: none;
+  cursor: default;
+}
+
+.today {
+  background-color: #1e3a8a;
+  border: 2px solid #60a5fa;
+}
+
+.has-note {
+  background-color: #3b82f6;
+  color: #121212;
+}
+
+
+#note-popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: #1f1f1f;
+  border: 2px solid #3b82f6;
+  padding: 15px;
+  border-radius: 12px;
+  z-index: 10;
+  width: 280px;
+}
+
+#note-popup textarea {
+  width: 100%;
+  height: 90px;
+  background-color: #2e2e2e;
+  color: #fff;
+  border: 1px solid #3b82f6;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#note-popup button {
+  margin: 5px 4px;
+  padding: 7px 14px;
+  background-color: #3b82f6;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#note-popup button:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: scale(1.03);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.modern-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
+  z-index: 1000;
+}
+
+.modern-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modern-sidebar a {
+  color: #e0e6ed;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modern-sidebar a:hover {
+  background-color: #3b82f6;
+  color: #0f172a;
+  transform: scale(1.05);
+}
+
+
+body {
+  margin-left: 220px;
+}
+

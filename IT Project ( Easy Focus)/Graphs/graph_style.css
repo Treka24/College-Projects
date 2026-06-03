@@ -1,0 +1,72 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px; 
+    font-family: 'Times New Roman', sans-serif;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  
+  div {
+    margin: 10px auto;
+    padding: auto;
+    max-width: 750px;
+  }
+  
+  canvas {
+    max-width: 750px;
+    width: 100%;
+    height: 500px; 
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+  }
+  .modern-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    z-index: 1000;
+  }
+  
+  .modern-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .modern-sidebar a {
+    color: #e0e6ed;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .modern-sidebar a:hover {
+    background-color: #3b82f6;
+    color: #0f172a;
+    transform: scale(1.05);
+  }

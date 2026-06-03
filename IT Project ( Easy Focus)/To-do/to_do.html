@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="to_dostyles.css" />
+  <link rel="stylesheet" href="../Notification/Notification_styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti/dist/js-confetti.browser.js"></script>
+</head>
+<body>
+  
+  <div id="quoteBox">
+    <img src="../Notification/quo.jpg" class="quote-img" alt="Quote">
+    <p id="quoteText">Quote goes here</p>
+    <button id="closeBtn">×</button>
+  </div>
+<aside class="modern-sidebar">
+
+    <h2>🧠 Easy Focus</h2>
+    <br>
+
+
+    <nav>
+      <a href="../home.html">🏠 Home</a>
+      <a href="../Calender/calender.html">🗓️ Calendar</a>
+      <a href="../Timer & Sounds/Timer.html">⏱️ Timer & Sounds</a>
+      <a href="../Report/report.html">📊 Report</a>
+      <a href="../Notes/Notes.html">📝 Notes</a>
+      <a href="../Graphs/graph_index.html">📈 Graph</a>
+    </nav>
+  </aside>
+
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Add a new task..."/>
+      <select id="priorityInput">
+        <option value="low">🟩 Low</option>
+        <option value="medium">🟨 Medium</option>
+        <option value="high">🟥 High</option>
+      </select>
+      <input type="text" id="categoryInput" placeholder="Category"/>
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div id="smile" class="hidden">😊</div>
+    <audio id="celebration-sound" src="fireworks-sound-280715.mp3" preload="auto"></audio>
+    <div id="confetti-container"></div>
+  </div>
+
+  <script src="to_doscript.js"></script>
+  <script src="../Notification/Notification_script.js"></script>
+</body>
+</html>

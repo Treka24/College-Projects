@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> To-Do-Calendar </title>
+    <link rel="stylesheet" href="calender_style.css">
+    <link rel="stylesheet" href="../Notification/Notification_styles.css">
+</head>
+<body>
+    <h1> To-Do-Calendar </h1>
+    
+  <div id="quoteBox">
+    <img src="../Notification/quo.jpg" class="quote-img" alt="Quote">
+    <p id="quoteText">Quote goes here</p>
+    <button id="closeBtn">×</button>
+  </div>
+    <div class="controls">
+        <button onclick="prevMonth()"> ◀️ </button>
+        <select id="month-select" onchange="changeMonth()"></select>
+        <select id="year-select" onchange="changeYear()"></select>
+        <button onclick="nextMonth()"> ▶️ </button>
+    </div>
+
+    <div id="calendar"></div>
+
+    <div id="note-popup" class="hidden">
+        <textarea id="note-text" placeholder="Write note here : "></textarea>
+        <button onclick="saveNote()">Save Note</button>
+        <button onclick="clearNotes()">Clear Notes</button>
+        <button onclick="closePopup()">Cancel</button>
+    </div>
+
+    <script src="Calender_script.js"></script>
+      <script src="../Notification/Notification_script.js"></script>
+</body>
+<aside class="modern-sidebar">
+
+    <h2>🧠 Easy Focus</h2>
+    <br>
+
+
+    <nav>
+      <a href="../home.html">🏠 Home</a>
+      <a href="../Timer & Sounds/Timer.html">⏱️ Timer & Sounds</a>
+      <a href="../To-do/to_do.html">☑️ To-do</a>
+      <a href="../Report/report.html">📊 Report</a>
+      <a href="../Notes/Notes.html">📝 Notes</a>
+      <a href="../Graphs/graph_index.html">📈 Graph</a>
+    </nav>
+  </aside>
+  
+</html>

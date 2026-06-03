@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time Counter</title>
+  <link rel="stylesheet" href="timer&sound.css">
+  <link rel="stylesheet" href="../Notification/Notification_styles.css">
+</head>
+<body class="dark-theme">
+   
+  <div id="quoteBox">
+    <img src="../Notification/quo.jpg" class="quote-img" alt="Quote">
+    <p id="quoteText">Quote goes here</p>
+    <button id="closeBtn">×</button>
+  </div>
+  <div class="container">
+    <h1>Time Counter</h1>
+    <div id="timer-display" class="timer-box">00:00:00</div>
+    <div class="controls">
+      <input type="number" id="hours" placeholder="Hours">
+      <input type="number" id="minutes" placeholder="Minutes">
+      <input type="number" id="seconds" placeholder="Seconds">
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+    <div class="controls">
+      <button onclick="startBreak(5)">Short Break</button>
+      <button onclick="startTimer()">Start Focus</button>
+      <button onclick="startBreak(15)">Long Break</button>
+    </div>
+    <div class="controls">
+      <a href="sounds.html" target="_blank" class="link-button">Sound Custom</a>
+
+      <button onclick="toggleFullscreen()">Full Screen</button>
+    </div>
+  </div>
+  <script src="timer.js"></script>
+    <script src="../Notification/Notification_script.js"></script>
+</body>
+<aside class="modern-sidebar">
+
+    <h2>🧠 Easy Focus</h2>
+    <br>
+
+
+    <nav>
+      <a href="../home.html">🏠 Home</a>
+      <a href="../Calender/calender.html">🗓️ Calendar</a>
+      <a href="../To-do/to_do.html">☑️ To-do</a>
+      <a href="../Report/report.html">📊 Report</a>
+      <a href="../Notes/Notes.html">📝 Notes</a>
+      <a href="../Graphs/graph_index.html">📈 Graph</a>
+    </nav>
+  </aside>
+</html>

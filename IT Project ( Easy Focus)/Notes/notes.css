@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e0e6ed;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4% 10%;
+  padding-left: 250px; 
+  position: relative;
+}
+
+.container button {
+  width: 64px;
+  height: 64px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  position:fixed;
+  bottom: 50px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.container button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.1);
+}
+
+.container button:active {
+  transform: scale(0.95);
+}
+
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 80px;
+}
+
+
+.note-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background-color: #1f2937;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  padding: 16px 20px;
+  position: relative;
+  min-height: 150px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.input-box {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.1rem;
+  color: #e0e6ed;
+  height: 200px;
+  resize: none;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+.note-wrapper img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  filter: invert(90%);
+}
+
+.note-wrapper img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Modern Sidebar */
+.modern-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
+  z-index: 1000;
+}
+
+.modern-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modern-sidebar a {
+  color: #e0e6ed;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modern-sidebar a:hover {
+  background-color: #3b82f6;
+  color: #0f172a;
+  transform: scale(1.05);
+}
